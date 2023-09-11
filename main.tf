@@ -1,5 +1,5 @@
 terraform {
-  
+  required_version = "~> 1.4.5"
 }
 
 variable "hello" {
@@ -7,5 +7,9 @@ variable "hello" {
 }
 
 variable "worlds" {
-  type = list
+  type = list(any)
+}
+
+variable "splat" {
+  type = list(any)
 }
